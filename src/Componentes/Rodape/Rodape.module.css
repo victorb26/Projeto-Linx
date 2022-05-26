@@ -1,0 +1,24 @@
+.rodapeDiv {
+    height: 25vh;
+    margin-top: 5rem;
+    background: grey;
+    clip-path: polygon(0% 28%, 100% 0%, 100% 100%, 0% 100%);  
+}
+
+.rodapeDiv section {
+    margin: 0 auto;
+    padding-top: 7rem;
+    font-family: Helvetica NeueRegular;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    letter-spacing: 1px;
+}
+@media (min-width: 760px) {
+    .rodapeDiv {
+        height: 30vh;
+    }
+    .rodapeDiv section {
+        padding-top: 10rem;
+    }
+}

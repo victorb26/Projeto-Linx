@@ -1,9 +1,11 @@
-import styles from "../Botões/Botoes.module.css"
+import styles from "../Botões/Botoes.module.css";
 
-const Botoes = ({texto, onClick}) => {
+const Botoes = ({ texto, onClick }) => {
   return (
-    <button className={`${styles.botoes} ${styles.largura}`} onClick={onClick}>{texto}</button>
-  )
-}
+    <button className={`${styles.botoes} ${styles.largura}`} onClick={onClick}>
+      {texto}
+    </button>
+  );
+};
 
-export default Botoes
+export default Botoes;

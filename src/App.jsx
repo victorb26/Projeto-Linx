@@ -1,7 +1,8 @@
 import React from "react"
 import './App.css'
 import Cabecalho from "./Componentes/Cabecalho/Cabecalho"
-import Produtos from "./Componentes/Produtos/Produtos"
+import Amigos from "./Componentes/Meio/Amigos/Amigos"
+import Produtos from "./Componentes/Meio/Produtos/Produtos"
 import Rodape from "./Componentes/Rodape/Rodape"
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
         <div className="">
           <Cabecalho />
           <Produtos/>
+          <Amigos/>
           <Rodape />
       </div>  
   )

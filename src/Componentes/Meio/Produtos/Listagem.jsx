@@ -1,5 +1,5 @@
-import Botao from "../Botões/Botoes";
-import styles from "../Produtos/Produtos.module.css";
+import Botao from "../../Botões/Botoes";
+import styles from "./Produtos.module.css";
 
 const Listagem = ({produtos}) => {
     return (

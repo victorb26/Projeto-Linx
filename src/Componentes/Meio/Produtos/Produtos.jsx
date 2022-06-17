@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
-import styles from "../Produtos/Produtos.module.css";
-import Botao from "../Botões/Botoes";
+import styles from "./Produtos.module.css";
+import Botao from "../../Botões/Botoes";
 import Listagem from "./Listagem";
 import Divisoria from "../Divisoria/Divisoria";
 

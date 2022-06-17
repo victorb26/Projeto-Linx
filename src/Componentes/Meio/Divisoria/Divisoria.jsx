@@ -1,4 +1,4 @@
-import styles from "../Divisoria/Divisoria.module.css";
+import styles from "./Divisoria.module.css";
 
 const Divisoria = ({texto}) => {
   return (

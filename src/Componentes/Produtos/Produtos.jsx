@@ -1,9 +1,10 @@
-import Botao from "../../Botões/Botoes";
-import styles from "./Produtos.module.css";
-import Listagem from "./Listagem";
 import { useState, useEffect } from "react";
+import styles from "../Produtos/Produtos.module.css";
+import Botao from "../Botões/Botoes";
+import Listagem from "./Listagem";
+import Divisoria from "../Divisoria/Divisoria";
 
-export default function Produtos() {
+const Produtos = () => {
   const [produtos, setProdutos] = useState([]);
   const [contador, setContador] = useState(1);
 
@@ -14,9 +15,13 @@ export default function Produtos() {
       .then((res) => res.json())
       .then((res) => setProdutos([...produtos, ...res.products]));
   }, [contador]);
+
+
+
   return (
     <div className={styles.containerSecaoProdutos}>
       <section id="produtos" className={styles.secaoProdutos}>
+        <Divisoria texto={"Sua seleção especial"} />
         <ul className={styles.containerProdutos}>
           <Listagem produtos={produtos} />
         </ul>
@@ -29,4 +34,6 @@ export default function Produtos() {
       </section>
     </div>
   );
-}
+};
+
+export default Produtos;

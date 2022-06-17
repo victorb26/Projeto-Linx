@@ -1,14 +1,14 @@
 import React from "react"
 import './App.css'
 import Cabecalho from "./Componentes/Cabecalho/Cabecalho"
-import Meio from "./Componentes/Meio/Meio"
+import Produtos from "./Componentes/Produtos/Produtos"
 import Rodape from "./Componentes/Rodape/Rodape"
 
 function App() {
   return(
         <div className="">
           <Cabecalho />
-          <Meio />
+          <Produtos/>
           <Rodape />
       </div>  
   )
